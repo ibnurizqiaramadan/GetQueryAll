@@ -1,0 +1,15 @@
+c:\users\xyrus10\source\repos\GetQueryAll\GetQueryAll\bin\Debug\GetQueryAll.exe.config
+c:\users\xyrus10\source\repos\GetQueryAll\GetQueryAll\bin\Debug\GetQueryAll.exe
+c:\users\xyrus10\source\repos\GetQueryAll\GetQueryAll\bin\Debug\GetQueryAll.pdb
+c:\users\xyrus10\source\repos\GetQueryAll\GetQueryAll\bin\Debug\GetQueryAll.xml
+c:\users\xyrus10\source\repos\GetQueryAll\GetQueryAll\obj\Debug\GetQueryAll.vbprojResolveAssemblyReference.cache
+c:\users\xyrus10\source\repos\GetQueryAll\GetQueryAll\obj\Debug\GetQueryAll.Form1.resources
+c:\users\xyrus10\source\repos\GetQueryAll\GetQueryAll\obj\Debug\GetQueryAll.Resources.resources
+c:\users\xyrus10\source\repos\GetQueryAll\GetQueryAll\obj\Debug\GetQueryAll.vbproj.GenerateResource.cache
+c:\users\xyrus10\source\repos\GetQueryAll\GetQueryAll\obj\Debug\GetQueryAll.vbproj.CoreCompileInputs.cache
+c:\users\xyrus10\source\repos\GetQueryAll\GetQueryAll\obj\Debug\GetQueryAll.exe
+c:\users\xyrus10\source\repos\GetQueryAll\GetQueryAll\obj\Debug\GetQueryAll.xml
+c:\users\xyrus10\source\repos\GetQueryAll\GetQueryAll\obj\Debug\GetQueryAll.pdb
+c:\users\xyrus10\source\repos\GetQueryAll\GetQueryAll\bin\Debug\MySql.Data.dll
+c:\users\xyrus10\source\repos\GetQueryAll\GetQueryAll\bin\Debug\MySql.Data.xml
+c:\users\xyrus10\source\repos\GetQueryAll\GetQueryAll\obj\Debug\GetQueryAll.vbproj.CopyComplete
