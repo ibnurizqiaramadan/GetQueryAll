@@ -27,8 +27,13 @@ Module Module1
         For Each inputcontrol In control.Controls   'Mengambil semua controls Array
             namecontrol = Strings.Left(inputcontrol.name, prefix.Length)    'Mengecek prefix
             If namecontrol = prefix Then
-                field += "`" & Strings.Right(inputcontrol.name, inputcontrol.name.length - prefix.Length) & "`,"   'mengambil dan mengumpulkan nama field berdasarkan nama controls
-                value += "'" & EscapeString(inputcontrol.text) & "',"   'mengambil dan mengumpulkan value text di controls
+                If TypeOf inputcontrol Is DateTimePicker Then
+                    field += "`" & Strings.Right(inputcontrol.name, inputcontrol.name.length - prefix.Length) & "`,"   'mengambil dan mengumpulkan nama field berdasarkan nama controls
+                    value += "'" & Format(inputcontrol.value, "yyyy-MM-dd") & "',"   'mengambil dan mengumpulkan value tanggal di controls
+                Else
+                    field += "`" & Strings.Right(inputcontrol.name, inputcontrol.name.length - prefix.Length) & "`,"   'mengambil dan mengumpulkan nama field berdasarkan nama controls
+                    value += "'" & EscapeString(inputcontrol.text) & "',"   'mengambil dan mengumpulkan value text di controls
+                End If
             End If
         Next
         resultfield = Strings.Left(field, field.Length - 1) 'mengumpulkan hasil field
@@ -43,7 +48,11 @@ Module Module1
             namecontrol = Strings.Left(inputcontrol.name, prefix.Length)
             If namecontrol = prefix Then
                 field = "`" & Strings.Right(inputcontrol.name, inputcontrol.name.length - prefix.Length) & "`,"
-                value = "'" & EscapeString(inputcontrol.text) & "',"
+                If TypeOf inputcontrol Is DateTimePicker Then
+                    value = "'" & Format(inputcontrol.value, "yyyy-MM-dd") & "',"
+                Else
+                    value = "'" & EscapeString(inputcontrol.text) & "',"
+                End If
                 resultfield = Strings.Left(field, field.Length - 1)
                 resultvalue = Strings.Left(value, value.Length - 1)
                 result += resultfield & " = " & resultvalue & ", "
